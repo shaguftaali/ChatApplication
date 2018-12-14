@@ -1,18 +1,15 @@
 package com.thecherno.chernochat;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.Window.Type;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -27,9 +24,6 @@ public class Login extends JFrame {
 	private JLabel lblIpAddress;
 	private JLabel lblPort;
 	private JTextField txtPort;
-
-	
-	
 
 	
 	public Login() {
@@ -105,7 +99,7 @@ public class Login extends JFrame {
 	 */
 	private void login(String name, String address, int port) {
 		dispose();
-		new Client(name, address, port);
+		new ClientWindow(name, address, port);
 		System.out.println(name+" , "+address+" , "+port);
 	}
 	
